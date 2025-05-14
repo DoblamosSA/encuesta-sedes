@@ -797,6 +797,10 @@
             $wire.ClickAlternative(this.faces[index].id);
         }
     }"
+     x-init="
+        startSurvey();
+        setInterval(() => { activeIcon = Math.floor(Math.random() * 3) }, 3000);       
+    "
 >
   <!-- Particle container -->
   <div class="particles"></div>
@@ -825,11 +829,7 @@
       <p class="question-text" x-text="currentQuestion"></p>
     </div>
   </div>
-  
-  <!-- Button to start survey -->
-  <div class="start-survey-btn" x-show="!surveyStarted" @click="startSurvey()">
-    <button>Empezar Encuesta</button>
-  </div>
+
   
   <div class="container">
     <!-- Faces in horizontal line (outside monitor) -->
@@ -842,6 +842,9 @@
              @click="setActive(index)">
           <div class="face-aura"></div>
           <span x-text="face.emoji" style="font-size: 36px; position: relative; z-index: 10300;"></span>
+          <div style="position: absolute; top: -40px; background: rgba(43, 123, 214, 0.7); color: white; padding: 5px 10px; border-radius: 5px; font-size: 10.5px; z-index: 10400; white-space: nowrap;">
+          <span x-text="face.mood"></span>
+        </div>
           <div x-show="activeIndex === index" 
                x-transition:enter="transition ease-out duration-300"
                x-transition:enter-start="opacity-0 transform scale-90"
