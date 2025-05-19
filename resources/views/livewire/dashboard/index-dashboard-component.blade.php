@@ -407,7 +407,7 @@
           x-transition:enter="transition ease-out duration-700 delay-200"
           x-transition:enter-start="opacity-0 transform translate-x-10"
           x-transition:enter-end="opacity-100 transform translate-x-0">
-        <img class="w-[200px] h-[300px]" src="{{ asset('img/recomendacion' . rand(1, 3) . '.png') }}" alt="Mascot" class="mascot-img">
+        <img style="width: 200px; height: 300px;" src="{{ asset('img/recomendacion' . rand(1, 3) . '.png') }}" alt="Mascot" class="mascot-img">
       </div>
     </div>
   </div>
