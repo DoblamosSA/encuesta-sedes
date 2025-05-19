@@ -36,7 +36,6 @@ class IndexDashboardComponent extends Component
         $this->currentQuestion = $this->questions[0];
     }
 
-
     public function ClickAlternative($id_calification)
     {
         try {
@@ -64,7 +63,7 @@ class IndexDashboardComponent extends Component
             Toaster::error($e->getMessage());
             $this->js("setTimeout(function() {
                 window.location.reload();
-            }, 3000);");
+            }, 2500);");
         }
     }
 
