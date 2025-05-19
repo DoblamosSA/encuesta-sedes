@@ -387,7 +387,7 @@
   
   <!-- Question and Mascot Row -->
   <div class="block">
-    <img src="https://www.doblamos.com/wp-content/uploads/2022/05/logo.png">
+    <img class="absolute" style="margin-top: -10px;" src="{{ asset('img/logo.png') }}">
     <div class="content-row">
 
       <!-- Question container -->
