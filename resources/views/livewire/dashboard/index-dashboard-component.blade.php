@@ -244,7 +244,7 @@
     top: 110px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(43, 123, 214, 0.8);
+    background: rgba(0, 89, 255, 0.8);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -387,7 +387,7 @@
   
   <!-- Question and Mascot Row -->
   <div class="block">
-    <img class="absolute" style="margin-top: -10px;" src="{{ asset('img/logo.png') }}">
+    <img class="absolute" style="margin-top: -33px;" src="{{ asset('img/logo.png') }}">
     <div class="content-row">
 
       <!-- Question container -->
