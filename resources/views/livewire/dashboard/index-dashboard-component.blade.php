@@ -155,8 +155,7 @@
     align-items: center;
     z-index: 1000;
     transform-style: preserve-3d;
-    margin-top: 20px;
-    padding: 0 20px;
+    margin-top: -50px;
   }
 
   .face {
@@ -167,7 +166,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 34px;
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 100;
@@ -386,8 +385,8 @@
 >
   
   <!-- Question and Mascot Row -->
-  <div class="block">
-    <img class="absolute" style="margin-top: -33px;" src="{{ asset('img/logo.png') }}">
+  <div style="margin-top: -200px;" class="block">
+    <img class="absolute" style="margin-top: -100px;" src="{{ asset('img/logo.png') }}">
     <div class="content-row">
 
       <!-- Question container -->
@@ -408,7 +407,7 @@
           x-transition:enter="transition ease-out duration-700 delay-200"
           x-transition:enter-start="opacity-0 transform translate-x-10"
           x-transition:enter-end="opacity-100 transform translate-x-0">
-        <img src="{{ asset('img/recomendacion' . rand(1, 3) . '.png') }}" alt="Mascot" class="mascot-img">
+        <img class="w-[200px] h-[300px]" src="{{ asset('img/recomendacion' . rand(1, 3) . '.png') }}" alt="Mascot" class="mascot-img">
       </div>
     </div>
   </div>

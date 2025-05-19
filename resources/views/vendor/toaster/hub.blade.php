@@ -8,7 +8,7 @@
     'items-end rtl:items-start' => $position->is('right'),
  ])>
     <template x-for="toast in toasts" :key="toast.id">
-        <div x-show="toast.isVisible"
+        <div style="margin-top: -100px;" x-show="toast.isVisible"
              x-init="$nextTick(() => toast.show($el))"
              @if($alignment->is('bottom'))
              x-transition:enter-start="translate-y-12 opacity-0"
