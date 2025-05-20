@@ -160,8 +160,8 @@
 
   .face {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -233,21 +233,21 @@
   }
 
   .face-emoji {
-    font-size: 60px;
+    font-size: 100px;
     position: relative;
     z-index: 103;
   }
 
   .face-tooltip {
     position: absolute;
-    top: 110px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 89, 255, 0.8);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 25px;
     white-space: nowrap;
     z-index: 104;
   }
@@ -407,7 +407,7 @@
           x-transition:enter="transition ease-out duration-700 delay-200"
           x-transition:enter-start="opacity-0 transform translate-x-10"
           x-transition:enter-end="opacity-100 transform translate-x-0">
-        <img style="width: 200px; height: 300px;" src="{{ asset('img/recomendacion' . rand(1, 3) . '.png') }}" alt="Mascot" class="mascot-img">
+        <img wire:ignore style="width: 200px; height: 300px;" src="{{ asset('img/recomendacion' . rand(1, 3) . '.png') }}" alt="Mascot" class="mascot-img">
       </div>
     </div>
   </div>
@@ -431,7 +431,7 @@
               x-transition:leave="transition ease-in duration-300"
               x-transition:leave-start="opacity-100 transform scale-100"
               x-transition:leave-end="opacity-0 transform scale-90"
-              style="position: absolute; top: -40px; background: rgba(43, 123, 214, 0.7); color: white; padding: 5px 10px; border-radius: 5px; font-size: 14px; z-index: 10400;">
+              style="position: absolute; top: -40px; background: rgba(43, 123, 214, 0.7); color: white; font-weight: bold;  padding: 5px 10px; border-radius: 5px; font-size: 15px; z-index: 10400;">
           <span>Seleccionado!</span>
         </div>
       </div>
