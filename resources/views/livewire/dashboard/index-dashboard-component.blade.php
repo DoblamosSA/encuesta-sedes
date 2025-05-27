@@ -337,8 +337,8 @@
       '¿Qué tan satisfecho está con la atención recibida?',
     ],
     faces: [
-      { id: 1, emoji: '😢', mood: 'Mala atención' },
-      { id: 2, emoji: '🙁', mood: 'Puede mejorar' },
+      { id: 1, emoji: '😢', mood: 'Muy insatisfecho' },
+      { id: 2, emoji: '🙁', mood: 'Insatisfecho' },
       { id: 3, emoji: '😐', mood: 'Regular' },
       { id: 4, emoji: '🙂', mood: 'Satisfecho' },
       { id: 5, emoji: '😄', mood: 'Muy satisfecho' }
