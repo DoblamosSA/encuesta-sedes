@@ -56,7 +56,7 @@ class IndexDashboardComponent extends Component
 
                 $this->js("setTimeout(function() {
                         window.location.reload();
-                    }, 3000);");
+                    }, 800);");
             }
         } catch (\Throwable $e) {
             // Puedes usar también Exception en lugar de Throwable si prefieres capturar solo excepciones estándar
