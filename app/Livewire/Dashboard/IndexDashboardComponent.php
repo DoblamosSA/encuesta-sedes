@@ -24,8 +24,8 @@ class IndexDashboardComponent extends Component
     ];
 
     private $calification = [
-        0 => "MALA ATENCION",
-        1 => "PUEDE MEJORAR",
+        0 => "MUY INSATISFECHO",
+        1 => "INSATISFECHO",
         2 => "NEUTRAL",
         3 => "SATISFECHO",
         4 => "MUY SATISFECHO",
